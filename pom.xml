@@ -164,7 +164,7 @@
 	<repositories>
     <repository>
       <id>${RELEASE_REPO}</id>
-      <url>http://${NEXUSIP}:${NEXUSPORT}/repository/${RELEASE_REPO}/</url>
+      <url>http://${NEXUSIP}:${NEXUSPORT}/repository/${CENTRAL_REPO}/</url>
     </repository>
   </repositories>
 </project>
