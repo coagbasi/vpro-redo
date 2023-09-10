@@ -163,8 +163,8 @@
     </build>
 	<repositories>
     <repository>
-      <id>${RELEASE_REPO}</id>
-      <url>http://${NEXUSIP}:${NEXUSPORT}/repository/${CENTRAL_REPO}/</url>
+      <id>${NEXUS_GRP_REPO}</id>
+      <url>http://${NEXUSIP}:${NEXUSPORT}/repository/${NEXUS_GRP_REPO}/</url>
     </repository>
   </repositories>
 </project>
