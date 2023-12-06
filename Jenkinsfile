@@ -19,10 +19,12 @@ pipeline {
 		NEXUSIP = '172.31.89.75'
 		NEXUSPORT = '8081'
 		NEXUS_GRP_REPO = 'vpro-maven-group'
-        NEXUS_LOGIN = 'nexuslogin'
-        SONARSERVER = 'sonarserver'
-        SONARSCANNER = 'sonarscanner'
-    }
+                NEXUS_LOGIN = 'nexuslogin'
+                SONARSERVER = 'sonarserver'
+                SONARSCANNER = 'sonarscanner'
+	        registryCredential = 'ecr:us-east-1:awscreds'
+                appRegistry = '160331347556.dkr.ecr.us-east-1.amazonaws.com/vprofileappimg'
+                vprofileRegistry = "https://160331347556.dkr.ecr.us-east-1.amazonaws.com"    }
 
     stages {
         stage('Build'){
